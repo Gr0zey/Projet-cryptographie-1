@@ -1,4 +1,4 @@
-message_chiffré = input("Entrez le texte à déchiffrer : ")
+message_chiffré = input("Entrez le texte à chiffrer : ")
 clef = int(input("valeur : "))
 
 liste=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
@@ -19,6 +19,4 @@ def chiffrage_lettre(lettre,liste):
 message_déchiffré = str()
 for lettre in message_chiffré:
     message_déchiffré += chiffrage_lettre(lettre,liste)
-print(message_déchiffré)
-
-
+print("Votre message chiffré : ", message_déchiffré)
